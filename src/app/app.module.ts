@@ -12,7 +12,7 @@ import { ApiService } from './shared';
 import { routing } from './app.routing';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
-
+import {SimpleTimer} from 'ng2-simple-timer';
 @NgModule({
   imports: [
     BrowserModule,
@@ -28,7 +28,8 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     RecordRTCComponent
   ],
   providers: [
-    ApiService
+    ApiService,
+    [SimpleTimer]
   ],
   bootstrap: [AppComponent]
 })
