@@ -169,7 +169,7 @@ export class RecordRTCComponent implements AfterViewInit {
   }
   private nextQ() {
     this.skip = 1;
-    console.log('hello');
+    console.log('qwe');
   }
 
 }
